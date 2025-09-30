@@ -1,0 +1,67 @@
+{
+  "title": "CISMA Exhibition 2025",
+  "subtitle": "Insights, Observations, and Improvement Opportunities",
+  "introduction": "This presentation showcases my observations and insights from the CISMA 2025 exhibition, highlighting key technologies, innovations, and opportunities for improvement in the industry.",
+
+  "videos": [
+    {
+      "src": "/videos/exhibition-overview.mp4",
+      "title": "Exhibition Overview",
+      "description": "A comprehensive walkthrough of the CISMA 2025 exhibition floor, showcasing the latest innovations in industrial technology."
+    }
+  ],
+
+  "images": [
+    {
+      "src": "/images/sample-1.jpg",
+      "alt": "Exhibition Hall",
+      "caption": "The main exhibition hall featuring cutting-edge machinery and technology displays"
+    },
+    {
+      "src": "/images/sample-2.jpg",
+      "alt": "Innovation Booth",
+      "caption": "Innovative automation solutions on display"
+    },
+    {
+      "src": "/images/sample-3.jpg",
+      "alt": "Technology Demo",
+      "caption": "Live demonstration of advanced manufacturing technology"
+    }
+  ],
+
+  "observations": [
+    {
+      "title": "Advanced Automation Integration",
+      "description": "The exhibition showcased impressive levels of automation integration across multiple manufacturing processes. Companies are moving towards fully integrated smart factory solutions with IoT connectivity and real-time monitoring capabilities.",
+      "icon": "🤖"
+    },
+    {
+      "title": "Sustainability Focus",
+      "description": "A significant number of exhibitors emphasized sustainability and energy efficiency in their solutions. This reflects the industry's shift towards environmentally responsible manufacturing practices.",
+      "icon": "🌱"
+    },
+    {
+      "title": "Digital Twin Technology",
+      "description": "Many vendors presented digital twin solutions for process optimization and predictive maintenance. This technology is becoming increasingly accessible to mid-sized manufacturers.",
+      "icon": "💻"
+    }
+  ],
+
+  "improvements": [
+    {
+      "title": "Enhanced User Experience",
+      "description": "While the technology is advanced, many interfaces could benefit from more intuitive design principles. Simplifying complex controls would reduce training time and improve operator efficiency.",
+      "icon": "✨"
+    },
+    {
+      "title": "Better Integration Standards",
+      "description": "The industry would benefit from more standardized integration protocols. Currently, connecting equipment from different vendors requires significant customization effort.",
+      "icon": "🔧"
+    },
+    {
+      "title": "Accessible Training Programs",
+      "description": "More emphasis should be placed on operator training and skill development programs. The advanced technology requires skilled workers who understand both the machinery and digital systems.",
+      "icon": "📚"
+    }
+  ]
+}
