@@ -2,28 +2,42 @@ interface VideoPlayerProps {
   src: string;
   title: string;
   description?: string;
+  type?: 'local' | 'embed'; // Type of video: local file or embed URL
 }
 
-export default function VideoPlayer({ src, title, description }: VideoPlayerProps) {
+export default function VideoPlayer({ src, title, description, type = 'local' }: VideoPlayerProps) {
   return (
     <div className="glass-card rounded-2xl overflow-hidden group hover:shadow-2xl transition-all duration-300 neon-border">
       {/* Video Container */}
       <div className="aspect-video bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
         {/* Decorative Corner Elements */}
-        <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-cyan-400/50"></div>
-        <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-purple-400/50"></div>
+        <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-cyan-400/50 z-20"></div>
+        <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-purple-400/50 z-20"></div>
 
-        <video
-          controls
-          className="w-full h-full relative z-10"
-          poster="/images/video-placeholder.jpg"
-        >
-          <source src={src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {/* Video or Iframe */}
+        {type === 'embed' ? (
+          <iframe
+            src={src}
+            className="w-full h-full relative z-10"
+            frameBorder="0"
+            scrolling="no"
+            allowFullScreen
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          />
+        ) : (
+          <video
+            controls
+            className="w-full h-full relative z-10"
+            poster="/images/video-placeholder.jpg"
+          >
+            <source src={src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
 
         {/* Glow Effect on Hover */}
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:to-purple-500/10 transition-all duration-500 pointer-events-none z-10"></div>
       </div>
 
       {/* Content Section */}
@@ -54,7 +68,7 @@ export default function VideoPlayer({ src, title, description }: VideoPlayerProp
         {/* Bottom Decorative Element */}
         <div className="flex items-center gap-2 mt-4 text-xs text-gray-500">
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-          <span>Ready to play</span>
+          <span>{type === 'embed' ? 'Cloud hosted' : 'Ready to play'}</span>
         </div>
       </div>
     </div>

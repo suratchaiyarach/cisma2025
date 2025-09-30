@@ -71,6 +71,7 @@ export default function Home() {
                 src={video.src}
                 title={video.title}
                 description={video.description}
+                type={video.type as 'local' | 'embed' | undefined}
               />
             </div>
           ))}

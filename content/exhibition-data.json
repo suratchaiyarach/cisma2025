@@ -5,8 +5,9 @@
 
   "videos": [
     {
-      "src": "/videos/exhibition-overview.mp4",
-      "title": "Exhibition Overview",
+      "src": "https://nanyangtextilegroup-my.sharepoint.com/personal/surat_c_nanyangtextile_com/_layouts/15/embed.aspx?UniqueId=f7b82fc0-e3f5-4603-a1a6-545d76037d53&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create",
+      "type": "embed",
+      "title": "CISMA 2025 Exhibition Tour",
       "description": "A comprehensive walkthrough of the CISMA 2025 exhibition floor, showcasing the latest innovations in industrial technology."
     }
   ],
