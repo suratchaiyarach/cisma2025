@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/CISMA2025' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/cisma2025' : '',
 };
 
 export default nextConfig;
